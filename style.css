@@ -20,6 +20,8 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+/*index*/
+
 .login{
     width: 100%;
     height: 100vh;
@@ -99,6 +101,8 @@ body{
     place-items: center;
     align-content: center;
 }
+
+/*1Password*/
 
 .email-container{
     display: grid;
@@ -181,6 +185,8 @@ body{
     color: var(--hospital-green);
 }
 
+ /*Edit and create*/
+
 .secondary-button{
     
     display: flex;
@@ -231,12 +237,254 @@ body{
     color: var(--very-light-pink);
 }
 
+/*HOME*/
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24rem);
+    gap: 2.6rem;
+    place-content: center;
+}
+
+.product-card{
+    width: 24rem;
+}
+.product-card img{
+    width: 24rem;
+    height: 24rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-info figure img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.price{
+    font-size: var(--md);
+    font-weight: bold;
+}
+.product-name{
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+/*menudesktop*/
+
+.desktop-menu{
+    text-align: end;
+    padding: 2rem;
+    width: 15rem;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 0.4rem;
+    
+}
+
+ul li:nth-child(1), ul li:nth-child(2){
+    font-weight: bold;
+}
+
+.title-menu{
+    font-size: var(--lg);
+    list-style: none;
+    margin-top: 2rem;
+    text-decoration: none;
+    
+}
+.title-menu a{
+    text-decoration: none;
+    color: var(--black);
+    
+}
+
+ul :nth-child(3){
+    padding-top: 3rem;   
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--md);
+    
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 
 
+.main-container-order{
+    display: grid;
+    place-content: center;
+}
+.title-myoder{
+    display: none;
+}
+.product-car{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-input-field);
+    border-radius: 0.8rem;
+    height: 7rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.product-car .articles .fecha{
+    font-size: var(--sm);
+    font-weight: bold;
+}
 
+.product-car .articles .number-articles{
+    font-size: var(--sm);
+    font-weight: lighter;
+}
+.product-car .payment-total{
+    font-size: var(--sm);
+    font-weight: 600;
+}
+
+.product-card-order{
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.product-card-order img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.name-product{
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--very-light-pink);
+}
+.price{
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.product-car-orders{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.main-container-orders{
+    display: grid;
+    place-content: center;
+    
+}
+.myorders{
+    width: 34rem;
+    margin-top: 3rem;
+}
+.product-car-orders .articles .fecha{
+    font-size: var(--sm);
+    font-weight: bold;
+}
+
+.product-car-orders .articles .number-articles{
+    font-size: var(--sm);
+    font-weight: lighter;
+}
+.product-car-orders .payment-total{
+    font-size: var(--sm);
+    font-weight: 600;
+}
+.main-container-orders .myorders div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+.main-container-orders .myorders div:nth-child(2) figure>img{
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.product-detail img:nth-child(2){
+    border-radius: 0rem 0rem 2rem 2rem;
+    width: 36rem;
+    height: 40rem;
+    object-fit: cover;
+}
+.product-detail div:nth-child(2) img{
+    position: absolute;
+    width: 20rem;
+}
+.product-detail > img:nth-child(1){
+    position: absolute;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    width: 2rem;
+    padding: 0.3rem;
+}
+.product-detail{
+    width: 36rem;
+    display: grid;
+    place-content: center;
+}
+.aside-product{
+    display: grid;
+    place-content: center;
+}
+.button-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 1rem 0rem 1rem;
+    width: 90%;
+}
+.button-add img{
+    margin-right: 1rem;
+}
+.product-infor p:nth-child(1){
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-top: 4rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+.product-infor p:nth-child(2){
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    font-weight: 300;
+    padding: 0.2rem 1rem 0rem 1rem;
+}
+.product-infor p:nth-child(3){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+    margin-top: 2rem;
+    text-align: justify;
+    padding: 1rem;
+    font-weight: 300;
+}
+.articles p{
+    font-size: var(--lg);
+    font-weight: bold;
+}
 
 
 
@@ -247,6 +495,31 @@ body{
     }
     .logo-login{
         display: block;
+    }
+
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 14rem);
+        gap: 2.6rem;
+        place-content: center;
+    }
+    .product-card{
+        width: 14rem;
+    }
+    .product-card img{
+        width: 14rem;
+        height: 14rem;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+    .product-detail{
+        width: 36rem;
+        display: grid;
+        place-content: center;
+    }
+    .aside-product{
+        display: grid;
+        place-content: center;
     }
     
 }
@@ -264,4 +537,29 @@ body{
     .Create{
         align-content: space-around;
     }
+    .title-myoder{
+        display: block;
+        margin-top: 15rem;
+        margin-bottom: 4rem;
+    }
+    .product-card-order{
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .name-product{
+        margin-left: -13rem;
+    }
+    .product-car-orders{
+        padding: 0rem;
+        margin-top: 3rem;
+    }
+    .product-detail{
+        position: absolute;
+        right: 0;
+        width: 36rem;
+    }
+
 }

@@ -1,0 +1,114 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.7rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar{
+    display: flex;
+}
+.menu{
+    display: none;
+}
+
+.navbar-complete div ul li{
+    list-style: none;
+}
+.navbar-complete div ul li a{
+    text-decoration: none;
+    font-size: var(--lg);
+    color: var(--very-light-pink);
+    font-weight: bold;
+}
+.navbar-complete div ul li a:hover{
+    text-decoration: none;
+    font-size: var(--lg);
+    color: var(--hospital-green);
+    font-weight: bold;
+    border: 1px solid var(--hospital-green);
+    border-radius: 0.5rem;
+}
+.navbar-complete{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.2rem solid var(--very-light-pink);
+    height: 100%;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 2rem 4rem 2rem 4rem;
+}
+.navbar-left, .navbar-right{
+    display: flex;
+    gap: 3rem;
+}
+.navbar-left img{
+    height: 2.5rem;
+}
+.list-nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navbar-right ul li:nth-child(1){
+    display: flex;
+}
+.navbar-right ul li{
+    gap: 1rem;
+}
+.navbar-right ul li:nth-child(1) img {
+  transform: rotate(90deg);
+}
+.navbar-right ul li:nth-child(2) div{
+    position: absolute;
+    margin-left: 2.75rem;
+    font-weight: bold;
+}
+.navbar-right ul li:nth-child(2) img{
+    position: relative;
+    height: 3.5rem;
+}
+.list-nav li:nth-child(2){
+    display: flex;
+}
+.list-nav li:nth-child(1) p{
+    font-size: var(--md);
+    font-weight: lighter;
+    color: var(--very-light-pink);
+}
+.navbar-right{
+    margin-left: 1rem;
+}
+
+@media (max-width: 640px) {
+    .menu{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-right .list-nav li:nth-child(1) {
+        display: none;
+    }
+    .navbar-complete{
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+    .navbar-left img{
+        height: 2.5rem;
+    }
+}
