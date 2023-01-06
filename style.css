@@ -485,6 +485,9 @@ ul :nth-child(3){
     font-size: var(--lg);
     font-weight: bold;
 }
+.margin{
+    margin-top: 5rem;
+}
 
 
 
