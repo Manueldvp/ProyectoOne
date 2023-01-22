@@ -26,7 +26,6 @@ body{
 
 .mobile-menu{
    padding: 2rem 4rem 4rem 4rem;
-   display: grid;
    place-content: center;
 }
 .mobile-menu ul{
@@ -61,4 +60,10 @@ body{
     color: var(--hospital-green);
     font-size: var(--sm);
     font-weight: bold;
+}
+
+@media (min-width: 640px){
+    .mobile-menu{
+        display: none;
+    }
 }
