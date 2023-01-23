@@ -324,6 +324,7 @@ ul li:nth-child(1), ul li:nth-child(2){
     top: 7.5rem;
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
 }
 
 
@@ -335,11 +336,10 @@ ul li:nth-child(1), ul li:nth-child(2){
     place-content: center;
     position: absolute;
     right: 2rem;
+    background-color: var(--white);
 }
 
-.inactive{
-    display: none;
-}
+
 
 .title-myoder{
     display: none;
@@ -502,8 +502,10 @@ ul li:nth-child(1), ul li:nth-child(2){
     margin-top: 1rem;
 }
 
-
-
+.Center{
+    display: grid;
+    place-content: center;
+}
 
 @media (max-width: 640px) {
     .logo {
@@ -578,5 +580,9 @@ ul li:nth-child(1), ul li:nth-child(2){
         right: 0;
         width: 36rem;
     }
+    
+}
 
+.inactive{
+    display: none;
 }
